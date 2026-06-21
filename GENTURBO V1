@@ -1,0 +1,44 @@
+-- GENTURBO GUI (LEGIT GUIDE UI)
+local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Name = "GentuRbo"
+gui.Parent = player:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 400)
+frame.Position = UDim2.new(0.05, 0, 0.2, 0)
+frame.BackgroundColor3 = Color3.fromRGB(25,25,25)
+frame.BorderSizePixel = 0
+frame.Parent = gui
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1,0,0,40)
+title.Text = "GENTURBO - FARM GUIDE"
+title.TextColor3 = Color3.fromRGB(0,255,120)
+title.BackgroundTransparency = 1
+title.Parent = frame
+
+local text = Instance.new("TextLabel")
+text.Size = UDim2.new(1,-10,1,-50)
+text.Position = UDim2.new(0,5,0,45)
+text.TextWrapped = true
+text.TextYAlignment = Enum.TextYAlignment.Top
+text.TextColor3 = Color3.fromRGB(255,255,255)
+text.BackgroundTransparency = 1
+text.Text =
+[[🌱 TIPS BERTANI:
+- Tanam bambu dulu (cepat panen)
+- Mushroom buat income stabil
+- Apple buat profit tinggi
+
+💰 BIAR CEPAT KAYA:
+- Jangan jual langsung, tunggu grow maksimal
+- Upgrade lahan dulu sebelum beli tanaman mahal
+
+👀 BIAR DIKIRA MISKIN:
+- Pakai tanaman basic tapi simpan hasil mahal di storage
+- Jangan pamer harvest besar
+
+⚠️ NOTE:
+Main smart, bukan cheat]]
+text.Parent = frame
